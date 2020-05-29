@@ -1,0 +1,684 @@
+Creating CA: C:\Users\Jitu\.docker\machine\certs\ca.pem
+Creating client certificate: C:\Users\Jitu\.docker\machine\certs\cert.pem
+Running pre-create checks...
+(default) Image cache directory does not exist, creating it at C:\Users\Jitu\.docker\machine\cache...
+(default) No default Boot2Docker ISO found locally, downloading the latest release...
+(default) Latest release for github.com/boot2docker/boot2docker is v19.03.5
+(default) Downloading C:\Users\Jitu\.docker\machine\cache\boot2docker.iso from https://github.com/boot2docker/boot2docker/releases/download/v19.03.5/boot2docker.iso...
+(default) 0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Creating machine...
+(default) Copying C:\Users\Jitu\.docker\machine\cache\boot2docker.iso to C:\Users\Jitu\.docker\machine\machines\default\boot2docker.iso...
+(default) Creating VirtualBox VM...
+(default) Creating SSH key...
+(default) Starting the VM...
+(default) Check network to re-create if needed...
+(default) Windows might ask for the permission to create a network adapter. Sometimes, such confirmation window is minimized in the taskbar.
+(default) Found a new host-only adapter: "VirtualBox Host-Only Ethernet Adapter #2"
+(default) Windows might ask for the permission to configure a network adapter. Sometimes, such confirmation window is minimized in the taskbar.
+(default) Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.
+(default) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: C:\Program Files\Docker Toolbox\docker-machine.exe env default
+
+
+
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+
+docker is configured to use the default machine with IP 192.168.99.100
+For help getting started, check out the docs at https://docs.docker.com
+
+
+Start interactive shell
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "C:\\Users\\Jitu\\.docker")
+  -c, --context string     Name of the context to use to connect to the
+                           daemon (overrides DOCKER_HOST env var and
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "C:\\Users\\Jitu\\.docker\\machine\\machines\\default\\ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "C:\\Users\\Jitu\\.docker\\machine\\machines\\default\\cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "C:\\Users\\Jitu\\.docker\\machine\\machines\\default\\key.pem")
+      --tlsverify          Use TLS and verify the remote (default true)
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu                                                                                                                                                                                    "docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish                                                                                                             unable to prepare context: unable to evaluate symlinks in Dockerfile path: CreateFile D:\Code\vscode\heroku-hosting\bin\release\netcoreapp3.1\publish\Dockerfile: The system cannot find the file specified.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: CreateFile D:\Code\vscode\heroku-hosting\bin\release\netcoreapp3.1\publish\Dockerfile: The system cannot find the file specified.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: CreateFile D:\Code\vscode\heroku-hosting\bin\release\netcoreapp3.1\publish\Dockerfile: The system cannot find the file specified.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish\\
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: CreateFile D:\Code\vscode\heroku-hosting\bin\release\netcoreapp3.1\publish\Dockerfile: The system cannot find the file specified.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.
+unable to prepare context: path "D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3." not found
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: CreateFile D:\Code\vscode\heroku-hosting\bin\release\netcoreapp3.1\publish\Dockerfile: The system cannot find the file specified.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+Sending build context to Docker daemon    298kB
+Step 1/10 : FROM microsoft/dotnet:3.1-sdk AS build-env
+manifest for microsoft/dotnet:3.1-sdk not found: manifest unknown: manifest unknown
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+Sending build context to Docker daemon    298kB
+Step 1/10 : FROM microsoft/dotnet:2.2-sdk AS build-env
+2.2-sdk: Pulling from microsoft/dotnet
+146bd6a88618: Pull complete                                                                                                                                                                                        9935d0c62ace: Pull complete                                                                                                                                                                                        db0efb86e806: Pull complete                                                                                                                                                                                        e705a4c4fd31: Pull complete                                                                                                                                                                                        563ac9aa7c80: Pull complete                                                                                                                                                                                        9db5b5c16f62: Pull complete                                                                                                                                                                                        ff05a093e8aa: Pull complete                                                                                                                                                                                        Digest: sha256:42699bba2fe4545dd753694499e6db08478ba5b3bcc34b929e7e324d4c115449
+Status: Downloaded newer image for microsoft/dotnet:2.2-sdk
+ ---> 2357b6790b9d
+Step 2/10 : WORKDIR /app
+ ---> Running in 8653cea26f3d
+Removing intermediate container 8653cea26f3d
+ ---> 9db18c1c5b76
+Step 3/10 : COPY *.csproj ./
+COPY failed: no source files were specified
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+Sending build context to Docker daemon    298kB
+Step 1/10 : FROM microsoft/dotnet:2.2-sdk AS build-env
+ ---> 2357b6790b9d
+Step 2/10 : WORKDIR /app
+ ---> Using cache
+ ---> 9db18c1c5b76
+Step 3/10 : COPY *.csproj ./
+COPY failed: no source files were specified
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting
+Sending build context to Docker daemon  3.074MB
+Step 1/10 : FROM microsoft/dotnet:2.2-sdk AS build-env
+ ---> 2357b6790b9d
+Step 2/10 : WORKDIR /app
+ ---> Using cache
+ ---> 9db18c1c5b76
+Step 3/10 : COPY *.csproj ./
+ ---> a9a6d966461a
+Step 4/10 : RUN dotnet restore
+ ---> Running in fccfd5da9e47
+/usr/share/dotnet/sdk/2.2.207/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(137,5): error NETSDK1045: The current .NET SDK does not support targeting .NET Core 3.1.  Either target .NET Core 2.2 or lower, or use a version of the .NET SDK that supports .NET Core 3.1. [/app/heroku-hosting.csproj]
+The command '/bin/sh -c dotnet restore' returned a non-zero code: 1
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting
+Sending build context to Docker daemon  3.074MB
+Step 1/10 : FROM microsoft/dotnet:3.1-sdk AS build-env
+manifest for microsoft/dotnet:3.1-sdk not found: manifest unknown: manifest unknown
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting
+Sending build context to Docker daemon  3.074MB
+Step 1/10 : FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
+3.1: Pulling from dotnet/core/sdk
+376057ac6fa1: Pull complete                                                                                                                                                                                        5a63a0a859d8: Pull complete                                                                                                                                                                                        496548a8c952: Pull complete                                                                                                                                                                                        2adae3950d4d: Pull complete                                                                                                                                                                                        2e16b9e1a161: Pull complete                                                                                                                                                                                        00f5f595bb47: Pull complete                                                                                                                                                                                        218e0b1856d2: Pull complete                                                                                                                                                                                        Digest: sha256:134f0793a9a65a237430b5d98050cb63e7c8718b0d2e73f4f974384a98023d56
+Status: Downloaded newer image for mcr.microsoft.com/dotnet/core/sdk:3.1
+ ---> 8c4dd5ac064a
+Step 2/10 : WORKDIR /app
+ ---> Running in 11c387c7a34f
+Removing intermediate container 11c387c7a34f
+ ---> bf94ea8ade11
+Step 3/10 : COPY *.csproj ./
+ ---> a3f512fe3385
+Step 4/10 : RUN dotnet restore
+ ---> Running in d628dff1f026
+  Determining projects to restore...
+  Restored /app/heroku-hosting.csproj (in 173 ms).
+Removing intermediate container d628dff1f026
+ ---> 152e4d28df5d
+Step 5/10 : COPY . ./
+ ---> 7811b83004e6
+Step 6/10 : RUN dotnet publish -c Release -o out
+ ---> Running in c516d10b38d9
+Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  Restored /app/heroku-hosting.csproj (in 170 ms).
+  heroku-hosting -> /app/bin/Release/netcoreapp3.1/heroku-hosting.dll
+  heroku-hosting -> /app/out/
+Removing intermediate container c516d10b38d9
+ ---> 381b8ce68979
+Step 7/10 : FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+ ---> 8c4dd5ac064a
+Step 8/10 : WORKDIR /app
+ ---> Using cache
+ ---> bf94ea8ade11
+Step 9/10 : COPY --from=build-env /app/out .
+ ---> e3021feb6808
+Step 10/10 : CMD dotnet heroku-hosting.dll
+ ---> Running in 33c2ceb3e0bd
+Removing intermediate container 33c2ceb3e0bd
+ ---> 7932cbe598de
+Successfully built 7932cbe598de
+Successfully tagged test-app-jitu:latest
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docket tag heroku-hosting registry.heroku.com/test-app-jitu/web
+bash: docket: command not found
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker tag heroku-hosting registry.heroku.com/test-app-jitu/web
+Error response from daemon: No such image: heroku-hosting:latest
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker tag test-app-jitu registry.heroku.com/test-app-jitu/web
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker push registry.heroku.com/test-app-jitu/web
+The push refers to repository [registry.heroku.com/test-app-jitu/web]
+593bce8d109b: Preparing                                                                                                                                                                                            5dabe01bc296: Preparing                                                                                                                                                                                            f76d42552bf8: Preparing                                                                                                                                                                                            51cc51cb1960: Preparing                                                                                                                                                                                            7f688ff061ec: Preparing                                                                                                                                                                                            88cfc2fcd059: Waiting                                                                                                                                                                                              760e8d95cf58: Preparing                                                                                                                                                                                            7cc1c2d7e744: Preparing                                                                                                                                                                                            8c02234b8605: Preparing                                                                                                                                                                                            no basic auth credentials
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container
+7.39.2
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:login
+ !    not logged in
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/b7674e8a-0659-48e2-92f2-686c7a9e17e5
+Logging in... done
+Logged in as jitusurve@gmail.com
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker push registry.heroku.com/test-app-jitu/web
+The push refers to repository [registry.heroku.com/test-app-jitu/web]
+593bce8d109b: Preparing                                                                                                                                                                                            5dabe01bc296: Preparing                                                                                                                                                                                            f76d42552bf8: Preparing                                                                                                                                                                                            51cc51cb1960: Preparing                                                                                                                                                                                            7f688ff061ec: Preparing                                                                                                                                                                                            88cfc2fcd059: Preparing                                                                                                                                                                                            760e8d95cf58: Preparing                                                                                                                                                                                            7cc1c2d7e744: Preparing                                                                                                                                                                                            8c02234b8605: Preparing                                                                                                                                                                                            no basic auth credentials
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/b5cd7790-995b-4ccb-bc66-9229294088ac
+Logging in... done
+Logged in as jitusurve@gmail.com
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:login
+WARNING! Your password will be stored unencrypted in C:\Users\Jitu\.docker\config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker push registry.heroku.com/test-app-jitu/web
+The push refers to repository [registry.heroku.com/test-app-jitu/web]
+593bce8d109b: Pushed                                                                                                                                                                                               5dabe01bc296: Pushed                                                                                                                                                                                               f76d42552bf8: Pushed                                                                                                                                                                                               51cc51cb1960: Pushed                                                                                                                                                                                               7f688ff061ec: Pushed                                                                                                                                                                                               88cfc2fcd059: Pushed                                                                                                                                                                                               760e8d95cf58: Pushed                                                                                                                                                                                               7cc1c2d7e744: Pushed                                                                                                                                                                                               8c02234b8605: Pushed                                                                                                                                                                                               latest: digest: sha256:c70918c708f5af46f0752146bd2e9565f1c273c139da78a25dea04861efb9165 size: 2216
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku conatainer:release web -app test-app-jitu
+ »   Warning: conatainer:release is not a heroku command.
+Did you mean container:release? [y/n]:
+ »   Error: Run heroku help for a list of available commands.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:release web -app test-app-jitu
+ !    Couldn't find that app.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:release web --app test-app-jitu
+Releasing images web to test-app-jitu... done
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku logs --tail
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku logs
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku logs --app test-app-jitu --tail
+2020-05-25T12:04:10.801651+00:00 app[api]: Initial release by user jitusurve@gmail.com
+2020-05-25T12:04:10.801651+00:00 app[api]: Release v1 created by user jitusurve@gmail.com
+2020-05-25T12:04:11.011247+00:00 app[api]: Enable Logplex by user jitusurve@gmail.com
+2020-05-25T12:04:11.011247+00:00 app[api]: Release v2 created by user jitusurve@gmail.com
+2020-05-25T12:05:30.000000+00:00 app[api]: Build started by user jitusurve@gmail.com
+2020-05-25T12:05:31.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/329914b1-5e4b-4611-87da-7de00412ec45/activity/builds/9e6f0027-9d5c-48db-87b0-9af881c32164
+2020-05-25T12:06:07.000000+00:00 app[api]: Build started by user jitusurve@gmail.com
+2020-05-25T12:06:08.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/329914b1-5e4b-4611-87da-7de00412ec45/activity/builds/e751e57e-9ee7-4c79-b64f-ae6759940db0
+2020-05-25T13:20:24.472082+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=fe2bcd9e-cdde-44ad-bb4f-6cfa0903ed9b fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:20:25.383261+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=abe07dcf-73cb-4c56-83a9-370d8bc4dde1 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:20:37.031015+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=49869522-4f88-4e16-8416-cb23e984175d fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:20:37.639589+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=3b6bbaff-1f3f-46bc-ae52-d46adf6055fc fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:38.567794+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=91cae357-d730-417c-92a6-beae9ff7a07c fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:39.124203+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=bbafc8fc-3a88-43d8-b836-6c9f0af5590d fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:56.170470+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=7b1673d9-d9d3-489c-aa06-821dc3bd559c fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:56.940806+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=2f55ab9c-b3b0-444c-bd10-ad7dbebc254e fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:09.424472+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=341aed8e-77d5-48b5-b987-460d0555642a fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:10.118618+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=2853b07c-e634-4239-adbc-661283e1cc71 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:11.884741+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=efe8c2b1-13f2-4de0-9f9d-1def5ed743e1 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:12.446481+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=25289423-98b1-404e-a0a3-08b6947cc63c fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:31.000000+00:00 app[api]: Build started by user jitusurve@gmail.com
+2020-05-25T13:36:33.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/329914b1-5e4b-4611-87da-7de00412ec45/activity/builds/b0adca72-ca71-4f92-bbd7-75e232fa7a4b
+2020-05-25T14:41:08.772527+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=f24e3607-10a2-4999-939a-d8e8585a35b4 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=http
+2020-05-25T14:41:09.426101+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=94bef0de-2b8a-46e3-a4ff-b597cef2e513 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=http
+2020-05-25T14:44:34.620178+00:00 app[api]: Deployed web (7932cbe598de) by user jitusurve@gmail.com
+2020-05-25T14:44:34.620178+00:00 app[api]: Release v3 created by user jitusurve@gmail.com
+2020-05-25T14:44:34.634421+00:00 app[api]: Scaled to web@1:Free by user jitusurve@gmail.com
+2020-05-25T14:44:44.422884+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T14:44:46.844091+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844106+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T14:44:46.844650+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844699+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T14:44:46.844705+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844709+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T14:44:46.844709+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844711+00:00 app[web.1]: Content root path: /app
+2020-05-25T14:45:44.720763+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T14:45:44.738926+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T14:45:44.816695+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T14:45:44.856482+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T14:45:44.860143+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T14:45:56.356232+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T14:45:58.272356+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=fe35a22c-4392-4cd0-93db-e6f0b98cf96f fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:01.543845+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.543869+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T14:46:01.547087+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.547088+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T14:46:01.547120+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.547120+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T14:46:01.547120+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.547121+00:00 app[web.1]: Content root path: /app
+2020-05-25T14:46:56.428629+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T14:46:56.458919+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T14:46:56.561663+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T14:46:56.615915+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T14:46:57.032791+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=b40a2516-77aa-4786-8f32-628788b56acd fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:57.888459+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=06e9238c-960d-41a5-a22b-849863e9dae5 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:58.775007+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=f5547f84-1fa9-424c-b8dc-6b72b944c44e fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:59.745663+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=cdca3691-22ab-4862-b8d9-5ec2c7697953 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:47:37.935602+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=056eaa63-be92-40ed-b950-6a42adb76cc5 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:47:38.742864+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=7fca1498-be46-4f26-a54f-d77a6ea39b8e fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku logs --app test-app-jitu --tail
+2020-05-25T12:06:08.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/329914b1-5e4b-4611-87da-7de00412ec45/activity/builds/e751e57e-9ee7-4c79-b64f-ae6759940db0
+2020-05-25T13:20:24.472082+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=fe2bcd9e-cdde-44ad-bb4f-6cfa0903ed9b fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:20:25.383261+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=abe07dcf-73cb-4c56-83a9-370d8bc4dde1 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:20:37.031015+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=49869522-4f88-4e16-8416-cb23e984175d fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:20:37.639589+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=3b6bbaff-1f3f-46bc-ae52-d46adf6055fc fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:38.567794+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=91cae357-d730-417c-92a6-beae9ff7a07c fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:39.124203+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=bbafc8fc-3a88-43d8-b836-6c9f0af5590d fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:56.170470+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=7b1673d9-d9d3-489c-aa06-821dc3bd559c fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:21:56.940806+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=2f55ab9c-b3b0-444c-bd10-ad7dbebc254e fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:09.424472+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=341aed8e-77d5-48b5-b987-460d0555642a fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:10.118618+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=2853b07c-e634-4239-adbc-661283e1cc71 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:11.884741+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=efe8c2b1-13f2-4de0-9f9d-1def5ed743e1 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:12.446481+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=25289423-98b1-404e-a0a3-08b6947cc63c fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=https
+2020-05-25T13:36:31.000000+00:00 app[api]: Build started by user jitusurve@gmail.com
+2020-05-25T13:36:33.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/329914b1-5e4b-4611-87da-7de00412ec45/activity/builds/b0adca72-ca71-4f92-bbd7-75e232fa7a4b
+2020-05-25T14:41:08.772527+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=f24e3607-10a2-4999-939a-d8e8585a35b4 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=http
+2020-05-25T14:41:09.426101+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=94bef0de-2b8a-46e3-a4ff-b597cef2e513 fwd="1.186.186.8" dyno= connect= service= status=502 bytes= protocol=http
+2020-05-25T14:44:34.620178+00:00 app[api]: Deployed web (7932cbe598de) by user jitusurve@gmail.com
+2020-05-25T14:44:34.620178+00:00 app[api]: Release v3 created by user jitusurve@gmail.com
+2020-05-25T14:44:34.634421+00:00 app[api]: Scaled to web@1:Free by user jitusurve@gmail.com
+2020-05-25T14:44:44.422884+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T14:44:46.844091+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844106+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T14:44:46.844650+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844699+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T14:44:46.844705+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844709+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T14:44:46.844709+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:44:46.844711+00:00 app[web.1]: Content root path: /app
+2020-05-25T14:45:44.720763+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T14:45:44.738926+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T14:45:44.816695+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T14:45:44.856482+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T14:45:44.860143+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T14:45:56.356232+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T14:45:58.272356+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=fe35a22c-4392-4cd0-93db-e6f0b98cf96f fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:01.543845+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.543869+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T14:46:01.547087+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.547088+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T14:46:01.547120+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.547120+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T14:46:01.547120+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T14:46:01.547121+00:00 app[web.1]: Content root path: /app
+2020-05-25T14:46:56.428629+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T14:46:56.458919+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T14:46:56.561663+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T14:46:56.615915+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T14:46:57.032791+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=b40a2516-77aa-4786-8f32-628788b56acd fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:57.888459+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=06e9238c-960d-41a5-a22b-849863e9dae5 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:58.775007+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=f5547f84-1fa9-424c-b8dc-6b72b944c44e fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:46:59.745663+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=cdca3691-22ab-4862-b8d9-5ec2c7697953 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:47:37.935602+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=056eaa63-be92-40ed-b950-6a42adb76cc5 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T14:47:38.742864+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=7fca1498-be46-4f26-a54f-d77a6ea39b8e fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T15:09:00.671697+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T15:09:12.584766+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T15:09:17.204953+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:09:17.204964+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T15:09:17.209377+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:09:17.209378+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T15:09:17.209773+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:09:17.209774+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T15:09:17.210247+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:09:17.210266+00:00 app[web.1]: Content root path: /app
+2020-05-25T15:10:12.979008+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T15:10:13.004458+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T15:10:13.096783+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T15:10:13.144061+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T15:49:54.272258+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T15:50:05.225960+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T15:50:08.693207+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:50:08.693223+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T15:50:08.693673+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:50:08.693674+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T15:50:08.693863+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:50:08.693864+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T15:50:08.693949+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T15:50:08.693950+00:00 app[web.1]: Content root path: /app
+2020-05-25T15:51:05.506042+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T15:51:05.525595+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T15:51:05.627898+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T15:51:05.664398+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T17:20:44.071806+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T17:20:56.870756+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T17:21:00.721820+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:21:00.721829+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T17:21:00.721925+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:21:00.721925+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T17:21:00.721967+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:21:00.721968+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T17:21:00.721970+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:21:00.721970+00:00 app[web.1]: Content root path: /app
+2020-05-25T17:21:57.177296+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T17:21:57.196767+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T17:21:57.284245+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T17:21:57.326340+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T17:21:59.536948+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=b1752b2c-fc2f-4edc-9c38-e77ccedafa74 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T17:22:00.909907+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=e4e05b9b-d150-43ad-ac3c-7c03591ec14f fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T17:34:24.376915+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=test-app-jitu.herokuapp.com request_id=bd41ef67-b9e7-447e-9670-60051c2d4d75 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T17:34:25.217622+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=1539283e-462a-4f52-ac42-fba035d7ad59 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T17:35:03.491013+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/weatherforecast" host=test-app-jitu.herokuapp.com request_id=52576059-62ab-42ac-b36d-a595b62d584f fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T17:35:04.775909+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=test-app-jitu.herokuapp.com request_id=308102d1-89ab-4f24-a6d6-cd4b4ef6b777 fwd="1.186.186.8" dyno= connect= service= status=503 bytes= protocol=http
+2020-05-25T17:42:22.182899+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T17:42:21.072558+00:00 app[api]: Release v4 created by user jitusurve@gmail.com
+2020-05-25T17:42:21.072558+00:00 app[api]: Deployed web (adacc80fb955) by user jitusurve@gmail.com
+2020-05-25T17:42:32.499998+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T17:42:35.155566+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:42:35.155591+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T17:42:35.157402+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:42:35.157403+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T17:42:35.158664+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:42:35.158665+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T17:42:35.158718+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:42:35.158719+00:00 app[web.1]: Content root path: /app
+2020-05-25T17:43:32.814536+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T17:43:32.840330+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T17:43:32.909617+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T17:43:32.955985+00:00 heroku[web.1]: State changed from starting to crashed
+2020-05-25T17:43:32.958359+00:00 heroku[web.1]: State changed from crashed to starting
+2020-05-25T17:43:42.475893+00:00 heroku[web.1]: Starting process with command `/bin/sh -c dotnet\ heroku-hosting.dll`
+2020-05-25T17:43:45.361682+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:43:45.361697+00:00 app[web.1]: Now listening on: http://localhost:5000
+2020-05-25T17:43:45.362123+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:43:45.362124+00:00 app[web.1]: Application started. Press Ctrl+C to shut down.
+2020-05-25T17:43:45.362128+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:43:45.362128+00:00 app[web.1]: Hosting environment: Production
+2020-05-25T17:43:45.362129+00:00 app[web.1]: info: Microsoft.Hosting.Lifetime[0]
+2020-05-25T17:43:45.362129+00:00 app[web.1]: Content root path: /app
+2020-05-25T17:44:42.884950+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-05-25T17:44:42.902190+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-05-25T17:44:42.971517+00:00 heroku[web.1]: Process exited with status 137
+2020-05-25T17:44:43.005563+00:00 heroku[web.1]: State changed from starting to crashed
+^CTerminate batch job (Y/N)? Y
+
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting\\bin\\release\\netcoreapp3.1\\publish
+Sending build context to Docker daemon    298kB
+Step 1/10 : FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
+ ---> 8c4dd5ac064a
+Step 2/10 : WORKDIR /app
+ ---> Using cache
+ ---> bf94ea8ade11
+Step 3/10 : COPY *.csproj ./
+COPY failed: no source files were specified
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker build -t test-app-jitu D:\\Code\\vscode\\heroku-hosting
+Sending build context to Docker daemon  3.155MB
+Step 1/10 : FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
+ ---> 8c4dd5ac064a
+Step 2/10 : WORKDIR /app
+ ---> Using cache
+ ---> bf94ea8ade11
+Step 3/10 : COPY *.csproj ./
+ ---> Using cache
+ ---> a3f512fe3385
+Step 4/10 : RUN dotnet restore
+ ---> Using cache
+ ---> 152e4d28df5d
+Step 5/10 : COPY . ./
+ ---> dcb3fe92a554
+Step 6/10 : RUN dotnet publish -c Release -o out
+ ---> Running in 745a17bf3eb6
+Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  Restored /app/heroku-hosting.csproj (in 184 ms).
+  heroku-hosting -> /app/bin/Release/netcoreapp3.1/heroku-hosting.dll
+  heroku-hosting -> /app/out/
+Removing intermediate container 745a17bf3eb6
+ ---> 511aff16cdde
+Step 7/10 : FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+ ---> 8c4dd5ac064a
+Step 8/10 : WORKDIR /app
+ ---> Using cache
+ ---> bf94ea8ade11
+Step 9/10 : COPY --from=build-env /app/out .
+ ---> Using cache
+ ---> e3021feb6808
+Step 10/10 : ENTRYPOINT [ "dotnet", "heroku-hosting.dll" ]
+ ---> Running in 04570532579e
+Removing intermediate container 04570532579e
+ ---> b43e9cafaa89
+Successfully built b43e9cafaa89
+Successfully tagged test-app-jitu:latest
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker tag test-app-jitu registry.heroku.com/test-app-jitu/web
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:release web -app test-app-jitu
+ !    Couldn't find that app.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/95ec0f0a-4a37-4c15-81d6-438a02b339f9
+Logging in... done
+Logged in as jitusurve@gmail.com
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:login
+Error response from daemon: Get https://registry.heroku.com/v2/: dial tcp: lookup registry.heroku.com on 10.0.2.3:53: read udp 10.0.2.15:55914->10.0.2.3:53: i/o timeout
+ !    Login failed with: 1
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/4bc86582-d263-4941-8038-4a2ed14ae3e6
+Logging in... done
+Logged in as jitusurve@gmail.com
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:release web -app test-app-jitu
+ !    Couldn't find that app.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:login
+Error response from daemon: Get https://registry.heroku.com/v2/: dial tcp: lookup registry.heroku.com on 10.0.2.3:53: read udp 10.0.2.15:60358->10.0.2.3:53: i/o timeout
+ !    Login failed with: 1
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku images
+ »   Warning: images is not a heroku command.
+Did you mean spaces? [y/n]: n
+ »   Error: Run heroku help for a list of available commands.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku image
+ »   Warning: image is not a heroku command.
+Did you mean scale? [y/n]: y
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
+<none>                                  <none>              511aff16cdde        6 minutes ago       708MB
+test-app-jitu                           latest              b43e9cafaa89        6 minutes ago       705MB
+registry.heroku.com/test-app-jitu/web   latest              b43e9cafaa89        6 minutes ago       705MB
+registry.heroku.com/test-app-jitu/web   <none>              7932cbe598de        4 hours ago         705MB
+<none>                                  <none>              381b8ce68979        4 hours ago         708MB
+<none>                                  <none>              a9a6d966461a        4 hours ago         1.74GB
+mcr.microsoft.com/dotnet/core/sdk       3.1                 8c4dd5ac064a        6 days ago          705MB
+microsoft/dotnet                        2.2-sdk             2357b6790b9d        4 months ago        1.74GB
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:release web -app test-app-jitu
+ !    Couldn't find that app.
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$ heroku container:login
+Error response from daemon: Get https://registry.heroku.com/v2/: dial tcp: lookup registry.heroku.com on 10.0.2.3:53: read udp 10.0.2.15:43097->10.0.2.3:53: i/o timeout
+ !    Login failed with: 1
+
+Jitu@LAPTOP-MTVRQ0RA MINGW64 /c/Program Files/Docker Toolbox
+$
